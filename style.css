@@ -1,0 +1,104 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF;
+    color: #222;
+    width: 100%;
+    overflow-x: hidden;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.col{
+    position: fixed;
+    height: 100vh;
+    top: 0px;
+}
+
+#left-col{
+    left: 0;
+    transform: translateX(-40%);
+}
+
+#right-col{
+    right: 0;
+    transform: translateX(40%);
+}
+
+.space{
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.accueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    height: 100vh;
+    z-index: 1;
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.accueil h1{
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.dptdle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./img/maps.jpg");
+}
+
+.dptdle h2{
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.low-quality{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./img/wall.jpg");
+    background-size: repeat;
+}
+
+.site{
+    width: 400px;
+    height: 300px;
+}
+
+.tv, .tv img, .tv-iframe, .tv-iframe iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.tv{
+    transform: translateY(-100%);
+}
+
+.tv-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 2 / 3 / 3; }
